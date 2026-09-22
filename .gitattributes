@@ -1,0 +1,6 @@
+# Keep the large recorded dataset in Git LFS. GitHub rejects regular Git blobs
+# larger than 100 MB, and these files are intended to be downloaded on demand.
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.parquet filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
